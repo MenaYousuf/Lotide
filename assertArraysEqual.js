@@ -1,17 +1,3 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅  Assertion passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑  Assertion failed: ${actual} !== ${expected}`);
-  }
-};
-
-assertEqual("Hello", "Hello");
-assertEqual("Mena", "Muna");
-assertEqual(1, 1);
-assertEqual(12, 21);
-
 const eqArrays = function(arr1, arr2) {
   if(arr1.length !== arr2.length) {
     return false;
@@ -36,6 +22,12 @@ const assertEqual = function(actual, expected) {
 };
 
 
-
-
-
+const assertArraysEqual = (arr1, arr2) => {
+  if(eqArrays[arr1]=== eqArrays[2]) {
+    return true;
+  } else {
+    if (!eqArrays[arr1]=== eqArrays[2]){
+      return false;
+    }
+  }
+  };
